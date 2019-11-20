@@ -15,5 +15,6 @@ enum TestEnum {
     case thirdQuestion
     case fourthQuestion
     case fifthQuestion
+    case final
 }
 

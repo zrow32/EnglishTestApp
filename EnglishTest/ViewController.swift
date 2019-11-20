@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     private let lightIsOn: CGFloat = 1
     private let lightIsOff: CGFloat = 0.3
     
+    var answerArray: [String] = []
+    
     // func buttonIsPressed
     // 4 варианта ответа - 4 кнопки с вариантами - нажатая кнопка передает значение в массив?
     
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func testActionButton() {
+        testButton.setTitle("Next question", for: .normal)
         
         aTestButton.isHidden = false
         bTestButton.isHidden = false
@@ -58,6 +61,7 @@ class ViewController: UIViewController {
             cTestButton.setTitle("C. I have 16 years", for: .normal)
             dTestButton.setTitle("D. I am 16 years", for: .normal)
             testEnum = .secondQuestion
+            //print(answerArray)
         //2
         case .secondQuestion:
             testLabel.text = "2. Are you having a nice time?"
@@ -66,30 +70,55 @@ class ViewController: UIViewController {
             cTestButton.setTitle("C. Yes, I am", for: .normal)
             dTestButton.setTitle("D. Yes, it is", for: .normal)
             testEnum = .thirdQuestion
+            //print(answerArray)
         //3
         case .thirdQuestion:
             testLabel.text = "3. Could you pass the salt please?"
+            aTestButton.setTitle("A. Over there", for: .normal)
+            bTestButton.setTitle("B. I don’t know", for: .normal)
+            cTestButton.setTitle("C. Help yourself", for: .normal)
+            dTestButton.setTitle("D. Here you are", for: .normal)
             testEnum = .fourthQuestion
+            //print(answerArray)
         //4
         case .fourthQuestion:
             testLabel.text = "4. Yesterday I went __________ bus to the National Museum."
+            aTestButton.setTitle("A. on", for: .normal)
+            bTestButton.setTitle("B. in", for: .normal)
+            cTestButton.setTitle("C. by", for: .normal)
+            dTestButton.setTitle("D. with", for: .normal)
             testEnum = .fifthQuestion
+            //print(answerArray)
         //5
         case .fifthQuestion:
             testLabel.text = "5. Sue and Mike __________ to go camping"
+            aTestButton.setTitle("A. wanted", for: .normal)
+            bTestButton.setTitle("B. said", for: .normal)
+            cTestButton.setTitle("C. made", for: .normal)
+            dTestButton.setTitle("D. talked", for: .normal)
+            testEnum = .final
+            //print(answerArray)
+        case .final:
+            testLabel.text = "\(answerArray)"
+            testButton.setTitle("Start test!", for: .normal) 
+            aTestButton.isHidden = true
+            bTestButton.isHidden = true
+            cTestButton.isHidden = true
+            dTestButton.isHidden = true
             testEnum = .firstQuestion
-            // Бесконечный цикл
-//
-//        default:
-//            break
+
         }
     }
     
     func testIsOnOrOff (aButton: Bool, bButton: Bool, cButton: Bool, dButton: Bool) {
         aButton == true ? (aTestButton.alpha = lightIsOn) : (aTestButton.alpha = lightIsOff)
+        if aButton == true {answerArray.append("A")}
         bButton == true ? (bTestButton.alpha = lightIsOn) : (bTestButton.alpha = lightIsOff)
+        if bButton == true {answerArray.append("B")}
         cButton == true ? (cTestButton.alpha = lightIsOn) : (cTestButton.alpha = lightIsOff)
+        if cButton == true {answerArray.append("C")}
         dButton == true ? (dTestButton.alpha = lightIsOn) : (dTestButton.alpha = lightIsOff)
+        if dButton == true {answerArray.append("D")}
     }
     
     @IBAction func firstTestButton() {
