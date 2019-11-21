@@ -24,8 +24,41 @@ class ViewController: UIViewController {
     
     var answerArray: [String] = []
     
-    // func buttonIsPressed
-    // 4 варианта ответа - 4 кнопки с вариантами - нажатая кнопка передает значение в массив?
+    var correctAnswerArray = [
+        "B", "C", "D", "C", "A", "B", "D", "B", "D", "C",
+        "D", "A", "B", "A", "C", "D", "A", "D", "A", "B",
+        "D", "B", "C", "D", "C", "A", "B", "D", "A", "B",
+        "C", "C", "D", "C", "D", "C", "A", "A", "B", "B",
+        "B", "C", "A", "D", "B", "D", "A", "C", "C", "A",
+        "C", "A", "B", "C", "D", "B", "D", "B", "C", "A"
+    ]
+    
+    var resultTestValue = 0
+
+    func resulsTestFunc (answer: [String], correctAnswer: [String]) {
+        for i in 0..<answerArray.count {
+            if answerArray[i] == correctAnswerArray[i] {resultTestValue += 1}
+        }
+    }
+    
+    func buttonIsHidden (hidden: Bool) {
+        aTestButton.isHidden = hidden
+        bTestButton.isHidden = hidden
+        cTestButton.isHidden = hidden
+        dTestButton.isHidden = hidden
+    }
+    
+    func qestionsButton (
+        aQestionsButton: String,
+        bQestionsButton: String,
+        cQestionsButton: String,
+        dQestionsButton: String
+    ) {
+        aTestButton.setTitle(aQestionsButton, for: .normal)
+        bTestButton.setTitle(bQestionsButton, for: .normal)
+        cTestButton.setTitle(cQestionsButton, for: .normal)
+        dTestButton.setTitle(dQestionsButton, for: .normal)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,19 +66,13 @@ class ViewController: UIViewController {
         testLabel.text = "Are you ready to start testing?"
         testButton.layer.cornerRadius = 10
         
-        aTestButton.isHidden = true
-        bTestButton.isHidden = true
-        cTestButton.isHidden = true
-        dTestButton.isHidden = true
+        buttonIsHidden(hidden: true)
     }
     
     @IBAction func testActionButton() {
         testButton.setTitle("Next question", for: .normal)
         
-        aTestButton.isHidden = false
-        bTestButton.isHidden = false
-        cTestButton.isHidden = false
-        dTestButton.isHidden = false
+        buttonIsHidden(hidden: false)
         
         aTestButton.alpha = lightIsOff
         bTestButton.alpha = lightIsOff
@@ -56,55 +83,57 @@ class ViewController: UIViewController {
         //1
         case .firstQuestion:
             testLabel.text = "1. How old are you?"
-            aTestButton.setTitle("A. I have 16", for: .normal)
-            bTestButton.setTitle("B. I am 16", for: .normal)
-            cTestButton.setTitle("C. I have 16 years", for: .normal)
-            dTestButton.setTitle("D. I am 16 years", for: .normal)
+            qestionsButton(
+                aQestionsButton: "A. I have 16",
+                bQestionsButton: "B. I am 16",
+                cQestionsButton: "C. I have 16 years",
+                dQestionsButton: "D. I am 16 years"
+            )
             testEnum = .secondQuestion
-            //print(answerArray)
         //2
         case .secondQuestion:
             testLabel.text = "2. Are you having a nice time?"
-            aTestButton.setTitle("A. Yes, I’m nice", for: .normal)
-            bTestButton.setTitle("B. Yes, I’m having it", for: .normal)
-            cTestButton.setTitle("C. Yes, I am", for: .normal)
-            dTestButton.setTitle("D. Yes, it is", for: .normal)
+            qestionsButton(
+                aQestionsButton: "A. Yes, I’m nice",
+                bQestionsButton: "B. Yes, I’m having it",
+                cQestionsButton: "C. Yes, I am",
+                dQestionsButton: "D. Yes, it is"
+            )
             testEnum = .thirdQuestion
-            //print(answerArray)
         //3
         case .thirdQuestion:
             testLabel.text = "3. Could you pass the salt please?"
-            aTestButton.setTitle("A. Over there", for: .normal)
-            bTestButton.setTitle("B. I don’t know", for: .normal)
-            cTestButton.setTitle("C. Help yourself", for: .normal)
-            dTestButton.setTitle("D. Here you are", for: .normal)
+            qestionsButton(
+                aQestionsButton: "A. Over there",
+                bQestionsButton: "B. I don’t know",
+                cQestionsButton: "C. Help yourself",
+                dQestionsButton: "D. Here you are"
+            )
             testEnum = .fourthQuestion
-            //print(answerArray)
         //4
         case .fourthQuestion:
             testLabel.text = "4. Yesterday I went __________ bus to the National Museum."
-            aTestButton.setTitle("A. on", for: .normal)
-            bTestButton.setTitle("B. in", for: .normal)
-            cTestButton.setTitle("C. by", for: .normal)
-            dTestButton.setTitle("D. with", for: .normal)
+            qestionsButton(
+                aQestionsButton: "A. on",
+                bQestionsButton: "B. in",
+                cQestionsButton: "C. by",
+                dQestionsButton: "D. with"
+            )
             testEnum = .fifthQuestion
-            //print(answerArray)
         //5
         case .fifthQuestion:
             testLabel.text = "5. Sue and Mike __________ to go camping"
-            aTestButton.setTitle("A. wanted", for: .normal)
-            bTestButton.setTitle("B. said", for: .normal)
-            cTestButton.setTitle("C. made", for: .normal)
-            dTestButton.setTitle("D. talked", for: .normal)
+            qestionsButton(
+                aQestionsButton: "A. wanted",
+                bQestionsButton: "B. said",
+                cQestionsButton: "C. made",
+                dQestionsButton: "D. talked"
+            )
             testEnum = .final
-            //print(answerArray)
         case .final:
             testLabel.text = "\(answerArray)"
             testButton.setTitle("Start test!", for: .normal) 
-            aTestButton.isHidden = true
-            bTestButton.isHidden = true
-            cTestButton.isHidden = true
-            dTestButton.isHidden = true
+            buttonIsHidden(hidden: true)
             testEnum = .firstQuestion
 
         }
@@ -134,6 +163,11 @@ class ViewController: UIViewController {
         testIsOnOrOff(aButton: false, bButton: false, cButton: false, dButton: true)
     }
     
-    
+//    qestionsButton(
+//        aQestionsButton: "A.",
+//        bQestionsButton: "B.",
+//        cQestionsButton: "C.",
+//        dQestionsButton: "D."
+//    )
     
 }

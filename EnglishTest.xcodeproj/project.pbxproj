@@ -16,6 +16,7 @@
 		E330A7502382EAC2002E1B72 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330A74F2382EAC2002E1B72 /* TestViewController.swift */; };
 		E330A7522383305D002E1B72 /* TestEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330A7512383305D002E1B72 /* TestEnum.swift */; };
 		E38FF6BA23859DEB0006F925 /* ButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FF6B923859DEB0006F925 /* ButtonEnum.swift */; };
+		E38FF6C12387093F0006F925 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FF6C02387093F0006F925 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E330A74F2382EAC2002E1B72 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E330A7512383305D002E1B72 /* TestEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnum.swift; sourceTree = "<group>"; };
 		E38FF6B923859DEB0006F925 /* ButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEnum.swift; sourceTree = "<group>"; };
+		E38FF6C02387093F0006F925 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +64,59 @@
 		E330A73A2381EC29002E1B72 /* EnglishTest */ = {
 			isa = PBXGroup;
 			children = (
-				E330A73B2381EC29002E1B72 /* AppDelegate.swift */,
-				E330A73D2381EC29002E1B72 /* SceneDelegate.swift */,
-				E330A73F2381EC29002E1B72 /* ViewController.swift */,
-				E330A7512383305D002E1B72 /* TestEnum.swift */,
-				E38FF6B923859DEB0006F925 /* ButtonEnum.swift */,
-				E330A74F2382EAC2002E1B72 /* TestViewController.swift */,
-				E330A7412381EC29002E1B72 /* Main.storyboard */,
-				E330A7442381EC2B002E1B72 /* Assets.xcassets */,
-				E330A7462381EC2B002E1B72 /* LaunchScreen.storyboard */,
-				E330A7492381EC2B002E1B72 /* Info.plist */,
+				E38FF6BF238708710006F925 /* Models */,
+				E38FF6BB2387082F0006F925 /* ViewControllers */,
+				E38FF6BC238708420006F925 /* Supporting Files */,
+				E38FF6BD238708560006F925 /* Storyboards */,
+				E38FF6BE238708650006F925 /* Resources */,
 			);
 			path = EnglishTest;
+			sourceTree = "<group>";
+		};
+		E38FF6BB2387082F0006F925 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E330A73F2381EC29002E1B72 /* ViewController.swift */,
+				E330A74F2382EAC2002E1B72 /* TestViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E38FF6BC238708420006F925 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E330A73B2381EC29002E1B72 /* AppDelegate.swift */,
+				E330A73D2381EC29002E1B72 /* SceneDelegate.swift */,
+				E330A7492381EC2B002E1B72 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E38FF6BD238708560006F925 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E330A7412381EC29002E1B72 /* Main.storyboard */,
+				E330A7462381EC2B002E1B72 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E38FF6BE238708650006F925 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E330A7442381EC2B002E1B72 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E38FF6BF238708710006F925 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E330A7512383305D002E1B72 /* TestEnum.swift */,
+				E38FF6C02387093F0006F925 /* Question.swift */,
+				E38FF6B923859DEB0006F925 /* ButtonEnum.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +195,7 @@
 				E330A7502382EAC2002E1B72 /* TestViewController.swift in Sources */,
 				E330A73E2381EC29002E1B72 /* SceneDelegate.swift in Sources */,
 				E38FF6BA23859DEB0006F925 /* ButtonEnum.swift in Sources */,
+				E38FF6C12387093F0006F925 /* Question.swift in Sources */,
 				E330A7522383305D002E1B72 /* TestEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,8 +341,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "EnglishTest/Supporting\\ Files/Info.plist";
 				DEVELOPMENT_TEAM = 5288NF3D62;
-				INFOPLIST_FILE = EnglishTest/Info.plist;
+				INFOPLIST_FILE = "EnglishTest/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -316,8 +361,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "EnglishTest/Supporting\\ Files/Info.plist";
 				DEVELOPMENT_TEAM = 5288NF3D62;
-				INFOPLIST_FILE = EnglishTest/Info.plist;
+				INFOPLIST_FILE = "EnglishTest/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
