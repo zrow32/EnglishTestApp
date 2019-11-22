@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,17 +12,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EnglishTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-nc-qjh">
-                                <rect key="frame" x="64" y="174" width="286" height="0.0"/>
+                                <rect key="frame" x="42.5" y="80" width="290" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OuL-YS-jc8">
-                                <rect key="frame" x="37" y="745" width="340" height="60"/>
+                                <rect key="frame" x="61" y="567" width="253" height="60"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yq-Gw-n0K">
-                                <rect key="frame" x="16" y="341" width="382" height="41"/>
+                                <rect key="frame" x="16" y="280" width="343" height="41"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal">
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tll-so-2XA">
-                                <rect key="frame" x="16" y="402" width="382" height="41"/>
+                                <rect key="frame" x="16" y="341" width="343" height="41"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal">
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhH-4z-jv2">
-                                <rect key="frame" x="16" y="463" width="382" height="41"/>
+                                <rect key="frame" x="16" y="402" width="343" height="41"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal">
@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXC-f8-P7y">
-                                <rect key="frame" x="16" y="524" width="382" height="41"/>
+                                <rect key="frame" x="16" y="463" width="343" height="41"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal">
@@ -81,14 +81,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MhH-4z-jv2" secondAttribute="trailing" constant="16" id="0V0-Ka-NMw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SXC-f8-P7y" secondAttribute="trailing" constant="16" id="1Oo-Om-QAN"/>
                             <constraint firstItem="Tll-so-2XA" firstAttribute="top" secondItem="5yq-Gw-n0K" secondAttribute="bottom" constant="20" id="59d-RW-RaC"/>
-                            <constraint firstItem="wI8-nc-qjh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="D5k-a7-Wnb"/>
+                            <constraint firstItem="wI8-nc-qjh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="D5k-a7-Wnb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5yq-Gw-n0K" secondAttribute="trailing" constant="16" id="HF1-Rt-nGS"/>
                             <constraint firstItem="MhH-4z-jv2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Izh-74-6FE"/>
                             <constraint firstItem="Tll-so-2XA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QYV-AS-rQJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OuL-YS-jc8" secondAttribute="bottom" constant="57" id="RN9-46-rHX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OuL-YS-jc8" secondAttribute="bottom" constant="40" id="RN9-46-rHX"/>
                             <constraint firstItem="OuL-YS-jc8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SlC-96-FsB"/>
                             <constraint firstItem="5yq-Gw-n0K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeL-pb-C18"/>
-                            <constraint firstItem="wI8-nc-qjh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="213:667" id="VdU-xY-prj"/>
+                            <constraint firstItem="wI8-nc-qjh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="290:667" id="VdU-xY-prj"/>
                             <constraint firstItem="wI8-nc-qjh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="W4b-Yo-6lX"/>
                             <constraint firstItem="SXC-f8-P7y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c4v-SA-5LF"/>
                             <constraint firstItem="SXC-f8-P7y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="e1u-Up-m0K"/>
@@ -98,7 +98,7 @@
                             <constraint firstItem="SXC-f8-P7y" firstAttribute="top" secondItem="MhH-4z-jv2" secondAttribute="bottom" constant="20" id="ng5-E8-KUh"/>
                             <constraint firstItem="MhH-4z-jv2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="o8B-EU-N0D"/>
                             <constraint firstItem="MhH-4z-jv2" firstAttribute="top" secondItem="Tll-so-2XA" secondAttribute="bottom" constant="20" id="sD2-r4-ARk"/>
-                            <constraint firstItem="5yq-Gw-n0K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="297" id="sdt-br-lQT"/>
+                            <constraint firstItem="5yq-Gw-n0K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="280" id="sdt-br-lQT"/>
                             <constraint firstItem="Tll-so-2XA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zoS-rx-Vvq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

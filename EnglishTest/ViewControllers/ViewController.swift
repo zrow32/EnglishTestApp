@@ -34,10 +34,25 @@ class ViewController: UIViewController {
     ]
     
     var resultTestValue = 0
-
+    
     func resulsTestFunc (answer: [String], correctAnswer: [String]) {
         for i in 0..<answerArray.count {
             if answerArray[i] == correctAnswerArray[i] {resultTestValue += 1}
+        }
+    }
+    
+    func testResultAnswer (resultValue: Int) {
+        switch resultValue {
+        case  1...15:
+            testLabel.text = "Elementary Language Practice"
+        case 16...30:
+            testLabel.text = "Intermediate Language Practice"
+        case 31...45:
+            testLabel.text = "First Certificate Language Practice"
+        case 46...60:
+            testLabel.text = "Advanced Language Practice"
+        default:
+            testLabel.text = "Zero"
         }
     }
     
@@ -80,7 +95,7 @@ class ViewController: UIViewController {
         dTestButton.alpha = lightIsOff
         
         switch testEnum {
-        //1
+        //1 Question
         case .firstQuestion:
             testLabel.text = "1. How old are you?"
             qestionsButton(
@@ -90,7 +105,7 @@ class ViewController: UIViewController {
                 dQestionsButton: "D. I am 16 years"
             )
             testEnum = .secondQuestion
-        //2
+        //2 Question
         case .secondQuestion:
             testLabel.text = "2. Are you having a nice time?"
             qestionsButton(
@@ -100,7 +115,7 @@ class ViewController: UIViewController {
                 dQestionsButton: "D. Yes, it is"
             )
             testEnum = .thirdQuestion
-        //3
+        //3 Question
         case .thirdQuestion:
             testLabel.text = "3. Could you pass the salt please?"
             qestionsButton(
@@ -110,7 +125,7 @@ class ViewController: UIViewController {
                 dQestionsButton: "D. Here you are"
             )
             testEnum = .fourthQuestion
-        //4
+        //4 Question
         case .fourthQuestion:
             testLabel.text = "4. Yesterday I went __________ bus to the National Museum."
             qestionsButton(
@@ -120,7 +135,7 @@ class ViewController: UIViewController {
                 dQestionsButton: "D. with"
             )
             testEnum = .fifthQuestion
-        //5
+        //5 Question
         case .fifthQuestion:
             testLabel.text = "5. Sue and Mike __________ to go camping"
             qestionsButton(
@@ -129,13 +144,164 @@ class ViewController: UIViewController {
                 cQestionsButton: "C. made",
                 dQestionsButton: "D. talked"
             )
+            testEnum = .sixthQuestion
+        //6 Question
+        case .sixthQuestion:
+            testLabel.text = "6. Who’s calling, please?"
+            qestionsButton(
+                aQestionsButton: "A. Just a moment",
+                bQestionsButton: "B. It’s David Parker",
+                cQestionsButton: "C. I’ll call you back",
+                dQestionsButton: "D. Speaking"
+            )
+            testEnum = .seventhQuestion
+        //7 Question
+        case .seventhQuestion:
+            testLabel.text = "7. They were __________ after the long journey, so they went to bed."
+            qestionsButton(
+                aQestionsButton: "A. hungry",
+                bQestionsButton: "B. hot",
+                cQestionsButton: "C. lazy",
+                dQestionsButton: "D. tired"
+            )
+            testEnum = .eighthQuestion
+        //8 Question
+        case .eighthQuestion:
+            testLabel.text = "8. Can you tell me the __________ to the bus station?"
+            qestionsButton(
+                aQestionsButton: "A. road",
+                bQestionsButton: "B. way",
+                cQestionsButton: "C. direction",
+                dQestionsButton: "D. street"
+            )
+            testEnum = .ninthQuestion
+        //9 Question
+        case .ninthQuestion:
+            testLabel.text = "9. __________ you remember to buy some milk?"
+            qestionsButton(
+                aQestionsButton: "A. Have",
+                bQestionsButton: "B. Do",
+                cQestionsButton: "C. Should",
+                dQestionsButton: "D. Did"
+            )
+            testEnum = .tenthQuestion
+        //10 Question
+        case .tenthQuestion:
+            testLabel.text = "10. - Don’t forget to put the rubbish out. - I’ve __________ done it!"
+            qestionsButton(
+                aQestionsButton: "A. yet",
+                bQestionsButton: "B. still",
+                cQestionsButton: "C. already",
+                dQestionsButton: "D. even"
+            )
+            testEnum = .eleventhQuestion
+        //11 Question
+        case .eleventhQuestion:
+            testLabel.text = "11. You don’t need to bring __________ to eat."
+            qestionsButton(
+                aQestionsButton: "A. some",
+                bQestionsButton: "B. a food",
+                cQestionsButton: "C. many",
+                dQestionsButton: "D. anything"
+            )
+            testEnum = .twelfthQuestion
+        //12 Question
+        case .twelfthQuestion:
+            testLabel.text = "12. What about going to the cinema?"
+            qestionsButton(
+                aQestionsButton: "A. Good idea!",
+                bQestionsButton: "B. Twice a month.",
+                cQestionsButton: "C. It’s Star Wars.",
+                dQestionsButton: "D. I think so."
+            )
+            testEnum = .thirteenthQuestion
+        //13 Question
+        case .thirteenthQuestion:
+            testLabel.text = "13. - What would you like, Sue? - I’d like the same __________ Michael please."
+            qestionsButton(
+                aQestionsButton: "A. that",
+                bQestionsButton: "B. as",
+                cQestionsButton: "C. for",
+                dQestionsButton: "D. had"
+            )
+            testEnum = .fourteenthQuestion
+        //14 Question
+        case .fourteenthQuestion:
+            testLabel.text = "14. __________ people know the answer to that question."
+            qestionsButton(
+                aQestionsButton: "A. Few",
+                bQestionsButton: "B. Little",
+                cQestionsButton: "C. Least",
+                dQestionsButton: "D. A little"
+            )
+            testEnum = .fifteenthQuestion
+        //15 Question
+        case .fifteenthQuestion:
+            testLabel.text = "15. It’s not __________ to walk home by yourself in the dark."
+            qestionsButton(
+                aQestionsButton: "A. sure",
+                bQestionsButton: "B. certain",
+                cQestionsButton: "C. safe",
+                dQestionsButton: "D. problem"
+            )
+            testEnum = .sixteenthQuestion
+        //16 Question
+        case .sixteenthQuestion:
+            testLabel.text = "16. __________ sure all the windows are locked."
+            qestionsButton(
+                aQestionsButton: "A. Take",
+                bQestionsButton: "B. Have",
+                cQestionsButton: "C. Wait",
+                dQestionsButton: "D. Make"
+            )
+            testEnum = .seventeenthQuestion
+        //17 Question
+        case .seventeenthQuestion:
+            testLabel.text = "17. I’ll go and __________ if I can find him."
+            qestionsButton(
+                aQestionsButton: "A. see",
+                bQestionsButton: "B. look",
+                cQestionsButton: "C. try",
+                dQestionsButton: "D. tell"
+            )
+            testEnum = .eighteenthQuestion
+        //18 Question
+        case .eighteenthQuestion:
+            testLabel.text = "18. What’s the difference __________ football and rugby?"
+            qestionsButton(
+                aQestionsButton: "A. from",
+                bQestionsButton: "B. with",
+                cQestionsButton: "C. for",
+                dQestionsButton: "D. between"
+            )
+            testEnum = .nineteenthQuestion
+        //19 Question
+        case .nineteenthQuestion:
+            testLabel.text = "19. My car needs __________ ."
+            qestionsButton(
+                aQestionsButton: "A. repairing",
+                bQestionsButton: "B. to repair",
+                cQestionsButton: "C. to be repair",
+                dQestionsButton: "D. repair"
+            )
+            testEnum = .twentiethQuestion
+        //20 Question
+        case .twentiethQuestion:
+            testLabel.text = "20. Tim was too __________ to ask Monika for a dance."
+            qestionsButton(
+                aQestionsButton: "A. worried",
+                bQestionsButton: "B. shy",
+                cQestionsButton: "C. selfish",
+                dQestionsButton: "D. polite"
+            )
             testEnum = .final
+        // Finish the test
         case .final:
-            testLabel.text = "\(answerArray)"
-            testButton.setTitle("Start test!", for: .normal) 
+            resulsTestFunc(answer: answerArray, correctAnswer: correctAnswerArray)
+            testResultAnswer(resultValue: resultTestValue)
+            testButton.setTitle("Finish the test", for: .normal)
             buttonIsHidden(hidden: true)
             testEnum = .firstQuestion
-
         }
     }
     
