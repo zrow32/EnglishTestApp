@@ -13,14 +13,12 @@
 		E330A7432381EC29002E1B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E330A7412381EC29002E1B72 /* Main.storyboard */; };
 		E330A7452381EC2B002E1B72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E330A7442381EC2B002E1B72 /* Assets.xcassets */; };
 		E330A7482381EC2B002E1B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E330A7462381EC2B002E1B72 /* LaunchScreen.storyboard */; };
-		E330A7502382EAC2002E1B72 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330A74F2382EAC2002E1B72 /* TestViewController.swift */; };
 		E330A7522383305D002E1B72 /* TestEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330A7512383305D002E1B72 /* TestEnum.swift */; };
 		E38FF6BA23859DEB0006F925 /* ButtonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FF6B923859DEB0006F925 /* ButtonEnum.swift */; };
-		E38FF6C12387093F0006F925 /* TestResultSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FF6C02387093F0006F925 /* TestResultSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E330A7382381EC29002E1B72 /* EnglishTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E330A7382381EC29002E1B72 /* English App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "English App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E330A73B2381EC29002E1B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E330A73D2381EC29002E1B72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E330A73F2381EC29002E1B72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,10 +26,8 @@
 		E330A7442381EC2B002E1B72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E330A7472381EC2B002E1B72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E330A7492381EC2B002E1B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E330A74F2382EAC2002E1B72 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		E330A7512383305D002E1B72 /* TestEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnum.swift; sourceTree = "<group>"; };
 		E38FF6B923859DEB0006F925 /* ButtonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEnum.swift; sourceTree = "<group>"; };
-		E38FF6C02387093F0006F925 /* TestResultSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +52,7 @@
 		E330A7392381EC29002E1B72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E330A7382381EC29002E1B72 /* EnglishTest.app */,
+				E330A7382381EC29002E1B72 /* English App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				E330A73F2381EC29002E1B72 /* ViewController.swift */,
-				E330A74F2382EAC2002E1B72 /* TestViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -113,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				E330A7512383305D002E1B72 /* TestEnum.swift */,
-				E38FF6C02387093F0006F925 /* TestResultSwitch.swift */,
 				E38FF6B923859DEB0006F925 /* ButtonEnum.swift */,
 			);
 			path = Models;
@@ -136,7 +130,7 @@
 			);
 			name = EnglishTest;
 			productName = EnglishTest;
-			productReference = E330A7382381EC29002E1B72 /* EnglishTest.app */;
+			productReference = E330A7382381EC29002E1B72 /* English App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -192,10 +186,8 @@
 			files = (
 				E330A7402381EC29002E1B72 /* ViewController.swift in Sources */,
 				E330A73C2381EC29002E1B72 /* AppDelegate.swift in Sources */,
-				E330A7502382EAC2002E1B72 /* TestViewController.swift in Sources */,
 				E330A73E2381EC29002E1B72 /* SceneDelegate.swift in Sources */,
 				E38FF6BA23859DEB0006F925 /* ButtonEnum.swift in Sources */,
-				E38FF6C12387093F0006F925 /* TestResultSwitch.swift in Sources */,
 				E330A7522383305D002E1B72 /* TestEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vasilyeuInc.EnglishTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "English App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -370,7 +362,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vasilyeuInc.EnglishTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "English App";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
