@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TestEnglishLevelViewController: UIViewController {
 
     @IBOutlet var testLabel: UILabel!
     @IBOutlet var testButton: UIButton!
@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var bTestButton: UIButton!
     @IBOutlet var cTestButton: UIButton!
     @IBOutlet var dTestButton: UIButton!
+    @IBOutlet var cancelTestButton: UIButton!
     
     private var testEnum = TestEnum.firstQuestion
     
@@ -335,5 +336,9 @@ class ViewController: UIViewController {
 //        cQestionsButton: "C.",
 //        dQestionsButton: "D."
 //    )
+    
+    @IBAction func cancelTestActionButton() {
+        dismiss(animated: true)
+    }
     
 }
