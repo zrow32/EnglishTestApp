@@ -12,6 +12,8 @@ class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //пробный коммент
 
         // Do any additional setup after loading the view.
     }
