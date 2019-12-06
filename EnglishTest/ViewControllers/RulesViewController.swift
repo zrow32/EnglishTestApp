@@ -13,7 +13,7 @@ class RulesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        some commentaries deleted
+       just to get a clue
     }
     
 
