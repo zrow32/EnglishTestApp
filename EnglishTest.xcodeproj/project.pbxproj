@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CE84912239A5DC500DC8AAE /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE84911239A5DC500DC8AAE /* RulesViewController.swift */; };
 		E330A73C2381EC29002E1B72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330A73B2381EC29002E1B72 /* AppDelegate.swift */; };
 		E330A73E2381EC29002E1B72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330A73D2381EC29002E1B72 /* SceneDelegate.swift */; };
 		E330A7402381EC29002E1B72 /* TestEnglishLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E330A73F2381EC29002E1B72 /* TestEnglishLevelViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CE84911239A5DC500DC8AAE /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		E330A7382381EC29002E1B72 /* English App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "English App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E330A73B2381EC29002E1B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E330A73D2381EC29002E1B72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				E362CF28238DD47000F6D830 /* AccountViewController.swift */,
 				E330A73F2381EC29002E1B72 /* TestEnglishLevelViewController.swift */,
 				E362CF2A238DD67700F6D830 /* ExerciseViewController.swift */,
+				7CE84911239A5DC500DC8AAE /* RulesViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				E330A73C2381EC29002E1B72 /* AppDelegate.swift in Sources */,
 				E330A73E2381EC29002E1B72 /* SceneDelegate.swift in Sources */,
 				E38FF6BA23859DEB0006F925 /* ButtonEnum.swift in Sources */,
+				7CE84912239A5DC500DC8AAE /* RulesViewController.swift in Sources */,
 				E330A7522383305D002E1B72 /* TestEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
